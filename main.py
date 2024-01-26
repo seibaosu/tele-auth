@@ -26,7 +26,7 @@ async def MessageHandlers(event):
         client.disconnect()
 
 async def send_message_to_bot(cc):
-    await client.send_message('SDBB_Bot', f'/chk {cc}')
+    await client.send_message('SDBB_Bot', f'/auth {cc}')
 
 async def main():
     with open('card.txt', 'r') as file:
